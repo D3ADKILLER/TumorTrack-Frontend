@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TumorTrack AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TumorTrack AI</h1>
+        <p>Analyze brain MRI images to detect tumor type, location, and stage.</p>
+
+        <!-- Upload Section -->
+        <div class="upload-section">
+            <input type="file" id="imageInput" accept="image/*">
+            <button id="analyzeButton">Analyze Image</button>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results" style="display: none;">
+            <h2>Results</h2>
+            <div id="tumorType"></div>
+            <div id="tumorConfidence"></div>
+            <div id="tumorArea"></div>
+            <canvas id="imageCanvas"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
